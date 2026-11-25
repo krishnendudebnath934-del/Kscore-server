@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kscore-server
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: CRICAPI_KEY
+        sync: false
+      - key: FOOTBALL_KEY
+        sync: false
